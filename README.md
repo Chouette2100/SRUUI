@@ -23,7 +23,8 @@ export DBPW=xxxxxxxx
 ```
 
 ※ SRUUIについてはログ出力がるので　「  1>>tmplog.txt 2>&1」　の部分は余計ですが、参考として...
-※ 「 2>>tmplog.log」はあったほうがいいかも。
+
+※ 「 2>>tmplog.log」くらいはあったほうがいいかも。
 
 次にこれをcronで起動します。
 
