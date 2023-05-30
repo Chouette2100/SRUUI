@@ -39,29 +39,8 @@ export DBPW=xxxxxxxx
 $ crontab -e
 .
 .
-
 10 3-23/12 * * * ~chouette/MyProject/Showroom/UpdateUserInf/UpdateUserInf.sh
-.        {
-            "label": "go build",
-            "type": "shell",
-            "options": {
-                "env": {
-                  "CGO_ENABLED": "0"
-                }
-            },
-            "command": "go",
-            "args": [
-                "build",
-                "-v",
-                "./..."
-            ],
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-
+. 
 .
 ```
 
