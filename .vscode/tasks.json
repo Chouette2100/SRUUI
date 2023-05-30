@@ -14,7 +14,8 @@
             "command": "go",
             "args": [
                 "build",
-                "-v"
+                "-v",
+                "./..."
             ],
             "problemMatcher": [],
             "group": {
