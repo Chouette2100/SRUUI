@@ -1,5 +1,11 @@
 # SRUUI
 
+[『SHOWROOM イベント 獲得ポイント一覧』(1) 関連ソースの公開について](https://zenn.dev/chouette2100/books/d8c28f8ff426b7/viewer/4fccae)
+
+[『SHOWROOM イベント 獲得ポイント一覧』(5) ルーム情報の更新](https://zenn.dev/chouette2100/books/d8c28f8ff426b7/viewer/d9f919)
+
+----------------------
+
 [SRCGI](https://github.com/Chouette2100/SRCGI)でイベントを登録したときイベントに参加しているルームの情報が保存されます。
 
 ルーム情報つまりルーム名、ランク、レベル、フォロワー数などは刻々と変化します。
