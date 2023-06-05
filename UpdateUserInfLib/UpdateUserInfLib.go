@@ -73,10 +73,11 @@ import (
 	ここからUpdateUserInfLibとして
 	010AC00	SelectAcqTimeList()を追加する。
 	010AD00	UpdateUserInfLibから不要な関数を削除する。
+	010AE00	Room_url_keyから除外する文字列を"/"から"/r/"に変更する。
 
 */
 
-const Version = "010AD00"
+const Version = "010AE00"
 
 type Event_Inf struct {
 	Event_ID    string
@@ -1805,9 +1806,10 @@ func GetEventInfAndRoomList(
 		if inputmode == "file" {
 			ReplaceString = "https://www.showroom-live.com/"
 		} else {
-			ReplaceString = "/"
+			ReplaceString = "/r/"
 		}
 		roominfo.Account = strings.Replace(account, ReplaceString, "", -1)
+		roominfo.Account = strings.Replace(roominfo.Account, "/", "", -1)
 
 		roominfo.ID, _ = selection_c.Find(".js-follow-btn").Attr("data-room-id")
 		roominfo.Userno, _ = strconv.Atoi(roominfo.ID)
